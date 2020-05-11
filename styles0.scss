@@ -1,5 +1,5 @@
-$naturalColor: "green"; 
-$naturalColor2: "greenYellow"; 
+$naturalColor: green; 
+$naturalColor2: yellowgreen; 
 
 
 
@@ -7,10 +7,17 @@ $naturalColor2: "greenYellow";
 
 #dropdownLang
 {
-    background-color:$naturalColor;
+    /*Color*/
+    background-color:green;
+    
+    border: 4px solid $naturalColor2 ;
+    border-radius: 5px;
+
+/*Position*/
+
     position: absolute;
     right: 0px; 
-    border-color:$naturalColor2;
+
     
     
 }
