@@ -5,13 +5,19 @@
         <title>Project0 - Guitar tutorial</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-      
         <link rel="stylesheet" href="styles.css"> 
-    </head>
+      <!--To make my page text responsive-->
+        <meta name="viewport" content="width=device-wid th, initial-scale=1.0">
+
+      </head>
+
+
+
     <body>
         <header>
 
-          <img src=img\guitar.png width="5%" id="guitar">
+          <img src=img\guitar.png  id="guitar">
+
           <select id="dropdownLang" class="topElement">
             <option> 
               <a class="dropdown_Element">EN</a>
@@ -26,19 +32,36 @@
 
 
           
-         
-    
-
+      
 
         </header>    
 
        <nav>
 
           
-
+        <div class="dropDownMenu"></div>
             <button class="TopMenu topElement"> <!--Remember to change this to a dropdown list.-->
-                Lessons
+                Lessons           
             </button>
+            <div class="dropdownContent">
+              <a href="#">
+                Lesson 1 - Music notes
+              </a>
+              <a href="#">
+                Lesson 2 - Part of the guitar
+
+              </a>
+              <a href="#">
+                Lesson 3 - Guitar basic chords
+
+              </a>  
+              <a href="#">
+                Lesson 4 - How to read songs
+
+              </a>
+
+            </div>
+    
 
             <button class="topMenu topElement">
               About The Teacher
