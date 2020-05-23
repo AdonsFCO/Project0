@@ -1,103 +1,114 @@
-<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Project0 - Guitar tutorial</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="styles.css"> 
-      <!--To make my page text responsive-->
-        <meta name="viewport" content="width=device-wid th, initial-scale=1.0">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guitar Class</title>
+  <!--Bootsrap:-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
 
-      </head>
-
-
-
-    <body>
-        <header>
-
-          <img src=img\guitar.png  id="guitar">
-
-          <select id="dropdownLang" class="topElement">
-            <option> 
-              <a class="dropdown_Element">EN</a>
-            </option>
-
-            <option> 
-              <a class="dropdown_Element">ES</a>
-            </option>
-
-         </select>
-          <h1 id="pageBanerText">Basic guitar lessons</h1>
+<body>
+  <div class="cotainer">
+    <!--Left side of the page-->
+    
+    <div id="logo"> 
+      <!--Top-->
+      <div id="logo">
+        <img id="logoImage" src="/img/LogoText.png" >
+    
 
 
+      </div>
+      <header class="d-none d-md-flex ">
+        <div id="navInformation">
+            Home
+
+          </div>
           
+          <div class="btn-group">
+
+            <button id="nextLesson" class="btn btn-dark">
+            Next Lesson 
+           </button>
+           <button id="previousLesson" class="btn btn-dark">
+             Previous Lesson
+          </button>
+
+
+        </div>
       
+      </header>
 
-        </header>    
-
-       <nav>
-
-          
-        <div class="dropDownMenu"></div>
-            <button class="TopMenu topElement"> <!--Remember to change this to a dropdown list.-->
-                Lessons           
+    </div>
+    <!--Left Menu-->
+        <nav> 
+          <div class="btn-group w-100 shadow-lg">
+            <button class="left-button btn btn-dark" id="home"> 
+              Home
             </button>
-            <div class="dropdownContent">
-              <a href="#">
-                Lesson 1 - Music notes
-              </a>
-              <a href="#">
-                Lesson 2 - Part of the guitar
-
-              </a>
-              <a href="#">
-                Lesson 3 - Guitar basic chords
-
-              </a>  
-              <a href="#">
-                Lesson 4 - How to read songs
-
-              </a>
-
+        
+            <button class="left-button btn btn-dark" id="lessons"> 
+              Lessons 
+            </button>
+        
+            <button class="left-button btn btn-dark" id="about"> 
+              About
+            </button>
+          </div>
+          
+        
+            <div id="bell"> </div>
+            <div id="user"> </div>
+          </nav>
+          <!--Center page-->
+          <main>
+            
+            <div class="card m-3">
+              <img class="card-img-top" src="/img/g-power-chord.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Lesson 1</h5>
+                <p class="card-text">We will learn how to read basics chords <br>
+                diagrams.
+              </p>
+                <a href="#" class="btn btn-dark">Go to the lesson</a>
+              </div>
             </div>
-    
 
-            <button class="topMenu topElement">
-              About The Teacher
-            </button>
-             
-            <button class="topMenu topElement">
-               Extra Lessons
-              </button>
-          
-
-       </nav>
+            <div class="card m-3">
+              <img class="card-img-top" src="./img/horizontalGuitar.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Lesson 2</h5>
+                <p class="card-text">We will learn how to play basics chords.</p>
+                <a href="#" class="btn btn-dark">Go to the lesson</a>
+              </div>
+            </div>
 
 
+          </main>
+          <!--Right Side-->
 
-        <main>
-          
-            <h1>
-              Wecome to my class
+          <aside>
+
+            <h1 id="webExtraTips" class="info">
+
+
             </h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum numquam sit nam perferendis fugiat consequuntur eos maiores animi dolorum deserunt dolore expedita commodi nobis dignissimos natus omnis ea, voluptas eveniet!
+            
+
+
+          </aside>
 
 
 
-            </p>
+
+</div>
 
 
 
-        </main>
+<!--Boostrap JS-->
 
-    
-
-          
-          <footer>&copy; Copyright 2020 rockTharsh</footer>
-   
-
-
-    </body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
 </html>
